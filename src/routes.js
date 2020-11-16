@@ -15,11 +15,11 @@ rota.post('/user', userController.store);
 rota.post('/user/:id_aluno/:id_turma', userController.joinTurma);
 
 rota.get('/users', userController.show);
+rota.get('/users/:id_user', userController.find);
 rota.get('/user/tarefas/:id_aluno', userController.showTarefas);
 
 //
 //Turma
-
 rota.post('/turma/:id_professor', turmaController.store);
 
 rota.get('/turmas/:id_professor', turmaController.show);
